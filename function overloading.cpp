@@ -1,22 +1,32 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
- 
- 
-void add(int a, int b)
+
+add(int a,int b)
 {
-  cout << "sum = " << (a + b);
+	return  a+b;
 }
- 
-void add(double a, double b)
+add(int a,int b,int c)
 {
-    cout << endl << "sum = " << (a + b);
+	return a+b+c;
 }
- 
-// Driver code
+add(float a,float b)
+{
+	return a+b;
+}
+
 int main()
 {
-    add(10, 2);
-    add(5.3, 6.2);
- 
-    return 0;
+	int x,y;
+	int a,b,c;
+	float o,m; 
+	cout<<"enter two integers"<<endl;
+	cin>> x>> y;
+	cout<<"addition"<<add(x,y)<<endl;
+	cout<<"enter three integers"<<endl;
+	cin>>a>>b>>c;
+	cout<<"addition"<<add(a,b,c)<<endl;
+	cout<<"enter two float value"<<endl;
+	cin>>o>>m;
+	cout<<"addition"<<add(o,m)<<endl;	
+	
 }
